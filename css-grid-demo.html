@@ -23,6 +23,22 @@ body {
   grid-gap: 1rem;
 }
 
+/* Media queries */
+
+/* tablet and up - display 2 columns */
+@media only screen and (min-width:768px) {
+  .cards {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+/* Laptop/desktop - display 3 columns */
+@media only screen and (min-width:992px) {
+  .cards {
+    grid-template-columns:repeat 20% 60% 20%;
+  }
+}
+
 </style>
 </head>
 <body>
